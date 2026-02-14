@@ -2,12 +2,10 @@ import express from "express";
 import multer from "multer";
 import mysql from "mysql2";
 import cors from "cors";
-import path from "path";
 import fs from "fs";
 
-
-
 const app = express();
+
 app.use(cors());
 app.use(express.json());
 app.use("/uploads", express.static("uploads"));
